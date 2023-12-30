@@ -1,0 +1,78 @@
+.page {
+  scroll-behavior: smooth;
+  min-height: 100vh;
+  background-color: $color-bg;
+
+  &:has(.page__menu:target) {
+    overflow: hidden;
+  }
+
+  &:has(.page__contact:target) {
+    .page__contact-title {
+      @include animation(blink, 4s, 500ms);
+    }
+  }
+
+  &__body {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.01em;
+    color: $color-black;
+
+    background-color: $color-bg;
+  }
+
+  &__menu {
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(-100%);
+    transition: all $effectDuration;
+
+    &:target {
+      opacity: 1;
+      pointer-events: all;
+      transform: translateX(0);
+    }
+  }
+
+  &__goTop-btn {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    right: 30px;
+    border: none;
+    outline: none;
+    background-color: $color-orange-light;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 30px;
+    line-height: 30px;
+    width: 50px;
+    z-index: 2;
+    height: 50px;
+    transition: background-color $effectDuration;
+    bottom: -70px;
+    transition: bottom 0.3s ease;
+  
+    &--show {
+      bottom: 20px;
+    }
+
+    &:hover {
+      background-color: $color-main;
+    }
+  }
+}
