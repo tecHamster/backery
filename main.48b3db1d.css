@@ -246,14 +246,14 @@ table {
 
 @font-face {
   font-family: "Inter";
-  src: url("/Inter-Regular.9d8ec52b.woff2") format("woff2"), url("/Inter-Regular.845b86a3.woff") format("woff"), url("/Inter-Regular.7951e3c2.ttf") format("ttf");
+  src: url("./Inter-Regular.9d8ec52b.woff2") format("woff2"), url("./Inter-Regular.845b86a3.woff") format("woff"), url("./Inter-Regular.7951e3c2.ttf") format("ttf");
   font-display: swap;
   font-weight: 400;
   font-style: normal; }
 
 @font-face {
   font-family: "Inter";
-  src: url("/Inter-Medium.c6998dac.woff2") format("woff2"), url("/Inter-Medium.5d0089bd.woff") format("woff"), url("/Inter-Medium.c48570a4.ttf") format("ttf");
+  src: url("./Inter-Medium.c6998dac.woff2") format("woff2"), url("./Inter-Medium.5d0089bd.woff") format("woff"), url("./Inter-Medium.c48570a4.ttf") format("ttf");
   font-display: swap;
   font-weight: 500;
   font-style: normal; }
@@ -517,14 +517,14 @@ table {
       display: block;
       width: 100%;
       padding-bottom: 100%;
-      background-image: url("/Cookie.f1774288.webp");
+      background-image: url("./Cookie.f1774288.webp");
       background-size: cover;
       background-position: center;
       grid-column: 1 / -1;
       animation: move-mobile 1s; }
       @media (min-width: 639.98px) {
         .header__title::after {
-          background-image: url("/Cookie.b40b3b18.webp");
+          background-image: url("./Cookie.b40b3b18.webp");
           position: absolute;
           z-index: -1;
           top: 0;
@@ -533,10 +533,10 @@ table {
           animation: move 1s; } }
       @media (min-width: 1023.98px) {
         .header__title::after {
-          background-image: url("/Cookie.65de6b28.webp"); } }
+          background-image: url("./Cookie.65de6b28.webp"); } }
       @media (min-width: 1199.98px) {
         .header__title::after {
-          background-image: url("/Cookie.e8f96dff.webp"); } }
+          background-image: url("./Cookie.e8f96dff.webp"); } }
   .header__title-content {
     grid-column: 1 / -1;
     transform: scale(0);
@@ -661,7 +661,7 @@ table {
       gap: 24px; } }
   @media (min-width: 639.98px) {
     .about__content {
-      background-image: url("/crumbs.c12ad6e8.webp");
+      background-image: url("./crumbs.c12ad6e8.webp");
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center center; } }
@@ -690,7 +690,7 @@ table {
 
 .data-list {
   grid-column: span 2;
-  background-image: url("/crumbs.c12ad6e8.webp");
+  background-image: url("./crumbs.c12ad6e8.webp");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
